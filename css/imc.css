@@ -1,0 +1,45 @@
+.Imagen {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #e6e6e6;
+    box-shadow: 0 0 35px 0 #4facfe;
+    border-radius: 20px;
+}
+
+.oscuro .Imagen {
+    box-shadow: 0 0 35px 0 #ff0048;
+}
+.Imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.02);
+} 
+
+.Resultado {
+    padding: 10px;
+    text-align: center;
+} 
+
+.coninput {
+    text-align: center;
+} 
+
+input {
+    padding: 6px 12px;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+}
+
+.boton {
+    margin: 10px;
+    text-align: center;
+} 
+
+.boton button {
+    padding: 12px 25px;
+}

@@ -1,0 +1,47 @@
+.inputCaledad {
+    outline: none;
+    display: flex;
+    gap: 5px;
+}
+
+.inputCaledad input {
+    padding: 10px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+ .signos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.signos button {
+    padding: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Calculadora Edad */
+
+input.calculadoraE,
+button.calculadoraE {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+button.calculadoraE {
+    padding: 10px;
+}
+
+#resultadoo {
+    margin-top: 20px;
+    text-align: center;
+}
+

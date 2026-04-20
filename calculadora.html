@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/calculadora.css">
+<link rel="icon" href="./favicon/favicon.ico" type="image/png">
+<script src="./Js/modoOscuro.js" defer></script>
+<title>Calculadora De Edad</title>
+</head>
+<body class="oscuro">
+    <nav class="cont_nav">
+        <a href="./index.html" id="logo" >Eryck Menco</a>
+        <ul class="nav-left">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./imc.html">IMC</a></li>
+            <li><a href="./listaDetareas.html">LISTA DE TAREAS</a></li>
+            <!-- <li><a href="./Saludo.html">SALUDO</a></li> -->
+            <li><a class="active" href="./calculadora.html">CALCULADORA</a></li>
+            <li><button class="btn-tema" onclick="cambiarTema()" >🌙</button></li>
+        </ul>
+    </nav>
+
+    <div class="principal">
+        <div class="contenedor">
+            <h1>Calculadora</h1>
+
+            <div class="inputCaledad">
+                <input type="number" id="valor1" placeholder="Primer Valor">
+                <input type="number" id="valor2" placeholder="Segundo Valor">
+            </div>
+
+            <div class="signos">
+                <button onclick="sumar()">Sumar</button>
+                <button onclick="restar()">Restar</button>
+                <button onclick="multiplicar()">Multiplicar</button>
+                <button onclick="dividir()">Dividir</button>
+                <button onclick="potencia()">Potencia</button>
+                <button onclick="modulo()">Modulo</button>
+            </div>
+
+            <p id="resultado">0</p> 
+
+        </div>
+
+        <div class="contenedor ">
+            <h1>Calculadora de Edad</h1>
+            <input class="calculadoraE" type="date" id="fechaNacimiento">
+            <button class="calculadoraE" id="btnCalcular">Calcular edad</button>
+            <p id="resultadoo">0</p> 
+        </div>
+
+    </div>
+    <footer>
+        <p>© Eryck Menco</p>
+    </footer>
+    <script src="./Js/calculadora.js" defer></script>
+    <script src="./Js/calculadoraE.js" defer></script>
+</body>
+</html>

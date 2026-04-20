@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./favicon/favicon.ico" type="image/png">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/listaDetareas.css">
+<script src="./Js/modoOscuro.js" defer></script>
+<title>LISTA DE TAREAS</title>
+</head>
+<body class="oscuro">
+    <nav class="cont_nav">
+        <a href="./index.html" id="logo" >Eryck Menco</a>
+        <ul class="nav-left">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./imc.html">IMC</a></li>
+            <li><a class="active" href="./listaDetareas.html">LISTA DE TAREAS</a></li>
+            <!-- <li><a href="./Saludo.html">SALUDO</a></li> -->
+            <li><a href="./calculadora.html">CALCULADORA</a></li>
+            <li><button class="btn-tema" onclick="cambiarTema()" >🌙</button></li>
+        </ul>
+    </nav>
+
+    <div class="principal">
+        <div class="contenedor">
+            <h1>Lista de tarea</h1>
+            <nav class="list_tareas">
+                <input type="text" id="contenido" placeholder="Escribe tu tarea a Realizar">
+                <button id="agregarBtn" >Agregar</button>
+            </nav>
+            
+            <main class="manin_tarea">
+                <section  id="tareas"></section>
+                    <div id="resultado">
+                        <p id="info">0 tareas - 0 completadas</p>
+                        <p id="contador"></p>
+                    </div>
+            </main>
+        </div> 
+        <div class="contenedor">
+            <h1>Lista Dinámica</h1>
+            <input type="text" id="inputTexto" placeholder="Escribe algo...">
+            <button id="btnAgregar">Agregar</button>
+            <div class="lis_cont">
+                <div  id="listaContenedor"></div>
+            </div>
+        </div> 
+    </div>
+    <footer>
+        <p>© Eryck Menco</p>
+    </footer>
+    <script src="./Js/listatareas.js" defer></script>
+    <script src="./Js/lista_dinamica.js" defer></script>
+</body>
+</html>
