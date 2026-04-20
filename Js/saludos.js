@@ -6,12 +6,12 @@ window.onload = function() {
 
   function saludar() {
         if (nombre === "" || nombre === null || edad === "" || edad === null) {
-            resultado.innerText = "Reinicia la pagina, llenalos campos y intente de nuevo";
+            resultado.innerText = "Por favor reinicia la pagina, llena los campos y intente de nuevo";
             alert("Llena los campos");
             return;
         }
         if (isNaN(edad)) {
-            resultado.innerText = "Por favor ingresa una edad válida.";
+            resultado.innerText = "Por favor reinicia la pagina y ingresa una edad válida.";
             alert("Por favor ingresa una edad válida.");
             return;
         }
