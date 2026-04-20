@@ -6,8 +6,8 @@ window.onload = function() {
 
   function saludar() {
         if (nombre === "" || nombre === null || edad === "" || edad === null) {
-            resultado.innerText = "Por favor reinicia la pagina, llena los campos y intente de nuevo";
-            alert("Llena los campos");
+            resultado.innerText = "Por favor reinicia la pagina, llena los campos y intente de nuevo.";
+            alert("Llena los campos.");
             return;
         }
         if (isNaN(edad)) {
