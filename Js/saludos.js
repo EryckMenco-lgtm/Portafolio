@@ -1,7 +1,7 @@
 window.onload = function() {
 
     const nombre = prompt("Escribe tu Nombre");
-    const edad = prompt("Escribe tu edad Edad");
+    const edad = prompt("Escribe tu Edad");
     const resultado = document.getElementById("resultado");
 
   function saludar() {
