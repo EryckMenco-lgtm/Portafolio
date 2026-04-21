@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: fantasy;
+    font-family: Eryckfont;
     transition: all 0.5s ease;
 }
 
@@ -147,7 +147,7 @@ input:focus {
 button {
     background: linear-gradient(145deg, #2b2b2b, #1a1a1a);
     color: #ffffff;
-    font-family: fantasy;
+    font-family: Eryckfont;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -253,7 +253,7 @@ footer p {
 .oscuro button {
     background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
     color: #1a1a1a;
-    font-family: fantasy;
+    font-family: Eryckfont;
     border: 1px solid rgba(0,0,0,0.1);
     box-shadow: 
     0 5px 15px rgba(0,0,0,0.1),
