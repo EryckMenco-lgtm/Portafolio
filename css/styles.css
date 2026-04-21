@@ -1,10 +1,12 @@
-/* Pagina principal */
 * {
     margin: 0;
     box-sizing: border-box;
     font-family: fantasy;
     transition: all 0.5s ease;
 }
+
+/* Pagina principal */
+
 body {
   margin: 0;
   padding: 0;
@@ -73,10 +75,6 @@ body {
   cursor: pointer;
 }
 
-.oscuro .btn-tema {
-    background-color: #ffffff;
-
-}
 .btn-tema:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgb(0, 0, 0);
@@ -179,13 +177,8 @@ footer p {
   color: #000000;
 }
 
-.oscuro .btn-tema:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 25px rgba(102, 255, 0, 0.841);
-}
-
-
 /* oscuro */
+
 .oscuro {
   background: linear-gradient(160deg, #000000, #010b12, #000000);
 }
@@ -212,6 +205,14 @@ footer p {
 
 .oscuro #logo:hover {
   color:  #ff0048;
+}
+.oscuro .btn-tema {
+    background-color: #ffffff;
+
+}
+.oscuro .btn-tema:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(102, 255, 0, 0.841);
 }
 
 .oscuro .contenedor {
@@ -277,6 +278,7 @@ footer p {
 } 
 
 /* RESPONSIVE */
+
 @media (max-width: 1150px) {
   .principal {
     flex-direction: column;
