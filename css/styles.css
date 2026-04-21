@@ -295,5 +295,6 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    text-align: center;
   }
 }
