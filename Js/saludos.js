@@ -19,14 +19,14 @@ window.onload = function() {
         mensaje += "Es un verdadero placer tenerte en nuestro portafolio. Saber que tienes " + edad + " años,  ";
 
         if (edad < 18) {
-            mensaje += "Y que eres un menor de edad.";
+            mensaje += "Siendo un menor de edad.";
         } else if (edad >= 18 && edad < 60) {
-            mensaje += "Y que ya eres un adulto.";
+            mensaje += "Siendo ya un adulto.";
         } else {
-            mensaje += "Y que eres de avanzada edad";
+            mensaje += "siendo de avanzada edad";
         }
 
-        resultado.innerText = mensaje + "La edad de esta etapa llena de oportunidades para aprender, crear y crecer. Me alegra tenerte aquí visitando mi portafolio. En este espacio podrás ver algunos de mis proyectos, ideas y el trabajo que he venido desarrollando. Espero que disfrutes el recorrido tanto como yo disfruté creándolo. ¡Gracias por estar aquí!";
+        resultado.innerText = mensaje + " Estas en esta etapa llena de oportunidades para aprender, crear y crecer. Me alegra tenerte aquí visitando mi portafolio. En este espacio podrás ver algunos de mis proyectos, ideas y el trabajo que he venido desarrollando. Espero que disfrutes el recorrido tanto como yo disfruté creándolo. ¡Gracias por estar aquí!";
     }
 
 saludar();
