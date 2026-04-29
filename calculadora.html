@@ -8,10 +8,11 @@
 <link rel="icon" href="./favicon/favicon.ico" type="image/png">
 <link rel="stylesheet" href="./css/font.css">
 <script src="./Js/modoOscuro.js" defer></script>
+<script src="./Js/hamburguesa.js" defer></script>
 <title>Calculadora De Edad</title>
 </head>
 <body class="oscuro">
-    <nav class="cont_nav">
+    <nav class="cont_nav" id="header">
         <a href="./index.html" id="logo" >Eryck Menco</a>
         <ul class="nav-left">
             <li><a href="./index.html">HOME</a></li>
@@ -19,9 +20,11 @@
             <li><a href="./listaDetareas.html">LISTA</a></li>
             <li><a class="active" href="./calculadora.html">CALCULADORA</a></li>
             <li><button class="btn-tema" onclick="cambiarTema()" >🌙</button></li>
-        </ul>
+        </ul>     
+		<button id="header-menu">
+		    <img src="./img/menu.png" alt="">
+		</button>
     </nav>
-
     <div class="principal">
         <div class="contenedor">
             <h1>Calculadora</h1>
