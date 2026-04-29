@@ -10,16 +10,21 @@
 <title>¡Bienvenidos!</title>
 </head>
 <body class="oscuro">
-    <nav class="cont_nav">
-        <a href="./index.html" id="logo" >Eryck Menco</a>
-        <ul class="nav-left">
-            <li><a class="active" href="./index.html">HOME</a></li>
-            <li><a href="./imc.html">IMC</a></li>
-            <li><a href="./listaDetareas.html">LISTA</a></li>
-            <li><a href="./calculadora.html">CALCULADORA</a></li>
-            <li><button class="btn-tema" onclick="cambiarTema()" >🌙</button></li>
-        </ul> 
+    <nav class="cont_nav" id="header">
+            <a href="./index.html" id="logo" >Eryck Menco</a>
+            <ul class="nav-left">
+                <li><a class="active" href="./index.html">HOME</a></li>
+                <li><a href="./imc.html">IMC</a></li>
+                <li><a href="./listaDetareas.html">LISTA</a></li>
+                <li><a href="./calculadora.html">CALCULADORA</a></li>
+                <li><button class="btn-tema" onclick="cambiarTema()" >🌙</button></li>
+            </ul> 
+            
+		    <button id="header-menu">
+		    	<img src="./img/menu.png" alt="">
+		    </button>
     </nav>
+
     <div class="principal">
         <div class="contenedor">
             <h1>¡Bienvenida!</h1>
@@ -32,6 +37,19 @@
     <footer>
         <p>© Eryck Menco</p>
     </footer>
-    <script src="./Js/saludos.js"></script>
+    <!-- <script src="./Js/saludos.js"></script> -->
+    <script>
+
+		const button = document.getElementById("header-menu")
+		const header = document.getElementById("header")
+
+		function mostrar() {
+			header.classList.toggle("abierto")
+		}
+
+		button.addEventListener("click", mostrar)
+
+
+	</script>
 </body>
 </html>

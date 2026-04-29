@@ -281,12 +281,87 @@ footer p {
   color: #ffffff;
 } 
 
+
+.lista a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+
+	transition: background-color 200ms, color 200ms;
+
+	&:hover {
+		background-color: white;
+		color: black;
+	}
+}
+
+#header-menu {
+	display: none;
+	background: transparent;
+	border: none;
+	padding: 5px;
+
+	& img {
+		height: 32px;
+	}
+}
+
+
+
+
 /* RESPONSIVE */
 
-@media (max-width: 1150px) {
+@media (max-width: 800px) {
   .principal {
     flex-direction: column;
     align-items: center;
+  }
+  .nav-left {
+    display: none;
+  }
+  #header {
+  color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: black;
+	padding: 0 10px;
+  }
+  .lista {
+		display: none;
+	}
+
+	#header-menu {
+		display: block;
+	}
+
+	.abierto .nav-left {
+		display: flex;
+		position: fixed;
+		flex-direction: column;
+    padding: 20px 0;
+    width: 35%; 
+		height: fit-content; 
+    bottom: auto; 
+    top: 48px; 
+    right: 0;
+    background: linear-gradient(135deg, #d6f0ee, #c8e8f0, #cce4f8);
+    border-radius: 5px;
+	}
+
+.abierto .nav-left li:hover {
+  color: #ff0048;
+  transition: all 0.2s ease;
+} 
+
+  .oscuro .abierto .nav-left {
+    background: linear-gradient(160deg, #000000, #010b12, #000000);
+  }
+  
+  .oscuro .abierto .nav-left li:hover {
+    color: #4facfe;
+    transition: all 0.2s ease;
   }
 
   .contenedor {
